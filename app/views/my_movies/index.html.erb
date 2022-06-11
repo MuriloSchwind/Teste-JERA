@@ -1,0 +1,48 @@
+<style>
+    .container{
+        max-width: 100%;
+        margin: 0 auto;
+        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu {
+        
+    }
+
+    nav {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index:99;
+        padding: 16px 32px;
+        border-bottom: 3px solid var(--primary);
+        justify-content: space-between;
+    }
+
+</style>
+
+<nav>
+    <div class="container">
+        <ul class="menu">
+            <a href="http://localhost:3000/">Buscar Filmes</a></li>
+            <a href="http://localhost:3000/my_movies">Meus filmes escolhidos</a></li>
+        </ul> 
+    </div>
+</nav>
+
+
+<h1>Catálogo de Filmes</h1>
+
+<% @my_movies.each do |movie|%>
+    <p><%= movie['title'] %></p>
+    <p>Sinopse: <%= movie['overview'] %></p>
+    <p>Avaliação: <%= movie['vote_average'] %><p>
+    <p>Poster: 
+        <img src="http://image.tmdb.org/t/p/w500<%= movie['poster_path']%>">
+    </p>
+
+    <p><%= link_to "Remover filme da lista", my_movie_path(id: movie['id']), method: :delete%></p>
+<% end %>
