@@ -1,25 +1,19 @@
-# README
+# Para utilizar a aplicação :
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1 - Primeiramente precisamos clonar o repositório;
 
-Things you may want to cover:
+2 - Instalar o ruby versão 3.0.2p107
 
-* Ruby version
+3 - Rails 6.0.5
 
-* System dependencies
+4 - Utilizar postgreql
 
-* Configuration
+# Comandos rails:
 
-* Database creation
+1 - rails db:create
 
-* Database initialization
+2 - rails db:migrate
 
-* How to run the test suite
+E por último rodar " rails s "
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # TesteJERA
