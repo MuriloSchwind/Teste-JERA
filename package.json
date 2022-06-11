@@ -12,11 +12,4 @@
   "devDependencies": {
     "webpack-dev-server": "^4.9.2"
   }
-
-  {
-    "engines": {
-      "node": "12.22.9"
-    }
-  }
-  
 }
